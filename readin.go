@@ -37,6 +37,17 @@ func ReadInputD(message string, d string) string {
 	return m
 }
 
+// ReadInputReq wraps around ReadInput, and continues to loop
+// until is not an empty string.
+func ReadInputReq(message string) string {
+	var i string
+	for i == "" {
+		i = ReadInput(message)
+	}
+
+	return i
+}
+
 // ReadInputAsArray wraps around ReadInput and turns a
 // string seperated by a specific seperator into a
 // string array
