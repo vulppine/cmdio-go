@@ -1,3 +1,3 @@
-module github.com/vulppine/cmdline
+module github.com/vulppine/cmdio-go
 
 go 1.16
