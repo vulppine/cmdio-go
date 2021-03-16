@@ -45,5 +45,5 @@ func UpOneLine() {
 }
 
 func ClearLine(m string) {
-	fmt.Printf("\033[K%s\n", m)
+	fmt.Printf("\033[K%s", m)
 }
